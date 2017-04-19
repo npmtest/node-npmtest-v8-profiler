@@ -1,7 +1,10 @@
-# test coverage for  [v8-profiler (v5.7.0)](http://github.com/node-inspector/v8-profiler)  [![npm package](https://img.shields.io/npm/v/npmtest-v8-profiler.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-v8-profiler) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-v8-profiler.svg)](https://travis-ci.org/npmtest/node-npmtest-v8-profiler)
+# npmtest-v8-profiler
+
+#### test coverage for  [v8-profiler (v5.7.0)](http://github.com/node-inspector/v8-profiler)  [![npm package](https://img.shields.io/npm/v/npmtest-v8-profiler.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-v8-profiler) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-v8-profiler.svg)](https://travis-ci.org/npmtest/node-npmtest-v8-profiler)
+
 #### node bindings for the v8 profiler
 
-[![NPM](https://nodei.co/npm/v8-profiler.png?downloads=true)](https://www.npmjs.com/package/v8-profiler)
+[![NPM](https://nodei.co/npm/v8-profiler.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/v8-profiler)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-v8-profiler/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-v8-profiler/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-v8-profiler/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-v8-profiler/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-v8-profiler/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-v8-profiler%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-v8-profiler/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-v8-profiler/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-v8-profiler%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-v8-profiler/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.html](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-v8-profiler/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-v8-profiler/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-v8-profiler/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-v8-profiler/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-v8-profiler/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-v8-profiler/build/screenCapture.npmPackageListing.svg)
 
@@ -27,8 +36,7 @@
 
 {
     "author": {
-        "name": "Danny Coates",
-        "email": "dannycoates@gmail.com"
+        "name": "Danny Coates"
     },
     "binary": {
         "module_name": "profiler",
@@ -45,8 +53,7 @@
             "name": "Miroslav Bajtoš"
         },
         {
-            "name": "3y3",
-            "email": "3y3@bk.ru"
+            "name": "3y3"
         }
     ],
     "dependencies": {
@@ -79,21 +86,17 @@
     "main": "v8-profiler",
     "maintainers": [
         {
-            "name": "dannycoates",
-            "email": "dannycoates@gmail.com"
+            "name": "dannycoates"
         },
         {
-            "name": "bajtos",
-            "email": "miro.bajtos@gmail.com"
+            "name": "bajtos"
         },
         {
-            "name": "3y3",
-            "email": "3y3@bk.ru"
+            "name": "3y3"
         }
     ],
     "name": "v8-profiler",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/node-inspector/v8-profiler.git"
