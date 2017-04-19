@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-v8-profiler/v8-profiler/v8-profiler.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-v8-profiler/node_modules/v8-profiler/v8-profiler.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,27 +192,27 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-v8-profiler">npmtest-v8-profiler (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-v8-profiler/v8-profiler/v8-profiler.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-v8-profiler/node_modules/v8-profiler/v8-profiler.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">16.54% <small>(21 / 127)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">18.11% <small>(23 / 127)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Branches: <span class="metric">0% <small>(0 / 68)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 34)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">5.88% <small>(2 / 34)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">17.5% <small>(21 / 120)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">19.17% <small>(23 / 120)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-v8-profiler/v8-profiler/</a> &#187; v8-profiler.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-v8-profiler/node_modules/v8-profiler/</a> » v8-profiler.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -610,7 +608,7 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -668,7 +666,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -742,10 +740,10 @@ var binding = require('./' + [
 var Stream = require('stream').Stream,
     inherits = require('util').inherits;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function Snapshot() {</span>}
+<span class="fstat-no" title="function not covered">function Snapshot() {</span>}
 &nbsp;
-Snapshot.prototype.getHeader = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  return {</span>
+Snapshot.prototype.getHeader = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  return {</span>
     typeId: this.typeId,
     uid: this.uid,
     title: this.title
@@ -756,28 +754,28 @@ Snapshot.prototype.getHeader = <span class="fstat-no" title="function not covere
  * @param {Snapshot} other
  * @returns {Object}
  */
-Snapshot.prototype.compare = <span class="fstat-no" title="function not covered" >function(other) {</span>
-<span class="cstat-no" title="statement not covered" >  var selfHist = nodesHist(this),</span>
+Snapshot.prototype.compare = <span class="fstat-no" title="function not covered">function(other) {</span>
+<span class="cstat-no" title="statement not covered">  var selfHist = nodesHist(this),</span>
       otherHist = nodesHist(other),
       keys = Object.keys(selfHist).concat(Object.keys(otherHist)),
       diff = {};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  keys.forEach(<span class="fstat-no" title="function not covered" >function(key) {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (key in diff) <span class="cstat-no" title="statement not covered" >return;</span></span>
+<span class="cstat-no" title="statement not covered">  keys.forEach(<span class="fstat-no" title="function not covered">function(key) {</span></span>
+<span class="cstat-no" title="statement not covered">    if (key in diff) <span class="cstat-no" title="statement not covered">return;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var selfCount = selfHist[key] || 0,</span>
+<span class="cstat-no" title="statement not covered">    var selfCount = selfHist[key] || 0,</span>
         otherCount = otherHist[key] || 0;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    diff[key] = otherCount - selfCount;</span>
+<span class="cstat-no" title="statement not covered">    diff[key] = otherCount - selfCount;</span>
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return diff;</span>
+<span class="cstat-no" title="statement not covered">  return diff;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function ExportStream() {</span>
-<span class="cstat-no" title="statement not covered" >  Stream.Transform.call(this);</span>
-<span class="cstat-no" title="statement not covered" >  this._transform = <span class="fstat-no" title="function not covered" >function noTransform(chunk, encoding, done) {</span></span>
-<span class="cstat-no" title="statement not covered" >    done(null, chunk);</span>
+<span class="fstat-no" title="function not covered">function ExportStream() {</span>
+<span class="cstat-no" title="statement not covered">  Stream.Transform.call(this);</span>
+<span class="cstat-no" title="statement not covered">  this._transform = <span class="fstat-no" title="function not covered">function noTransform(chunk, encoding, done) {</span></span>
+<span class="cstat-no" title="statement not covered">    done(null, chunk);</span>
   }
 }
 inherits(ExportStream, Stream.Transform);
@@ -786,80 +784,80 @@ inherits(ExportStream, Stream.Transform);
  * @param {Stream.Writable|function} dataReceiver
  * @returns {Stream|undefined}
  */
-Snapshot.prototype.export = <span class="fstat-no" title="function not covered" >function(dataReceiver) {</span>
-<span class="cstat-no" title="statement not covered" >  dataReceiver = dataReceiver || new ExportStream();</span>
+Snapshot.prototype.export = <span class="fstat-no" title="function not covered">function(dataReceiver) {</span>
+<span class="cstat-no" title="statement not covered">  dataReceiver = dataReceiver || new ExportStream();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var toStream = dataReceiver instanceof Stream,</span>
+<span class="cstat-no" title="statement not covered">  var toStream = dataReceiver instanceof Stream,</span>
       chunks = toStream ? null : [];
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function onChunk(chunk, len) {</span>
-<span class="cstat-no" title="statement not covered" >    if (toStream) <span class="cstat-no" title="statement not covered" >dataReceiver.write(chunk);</span></span>
-    else <span class="cstat-no" title="statement not covered" >chunks.push(chunk);</span>
+<span class="fstat-no" title="function not covered">  function onChunk(chunk, len) {</span>
+<span class="cstat-no" title="statement not covered">    if (toStream) <span class="cstat-no" title="statement not covered">dataReceiver.write(chunk);</span></span>
+    else <span class="cstat-no" title="statement not covered">chunks.push(chunk);</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function onDone() {</span>
-<span class="cstat-no" title="statement not covered" >    if (toStream) <span class="cstat-no" title="statement not covered" >dataReceiver.end();</span></span>
-    else <span class="cstat-no" title="statement not covered" >dataReceiver(null, chunks.join(''));</span>
+<span class="fstat-no" title="function not covered">  function onDone() {</span>
+<span class="cstat-no" title="statement not covered">    if (toStream) <span class="cstat-no" title="statement not covered">dataReceiver.end();</span></span>
+    else <span class="cstat-no" title="statement not covered">dataReceiver(null, chunks.join(''));</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.serialize(onChunk, onDone);</span>
+<span class="cstat-no" title="statement not covered">  this.serialize(onChunk, onDone);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return toStream ? dataReceiver : undefined;</span>
+<span class="cstat-no" title="statement not covered">  return toStream ? dataReceiver : undefined;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function nodes(snapshot) {</span>
-<span class="cstat-no" title="statement not covered" >  var n = snapshot.nodesCount, i, nodes = [];</span>
-<span class="cstat-no" title="statement not covered" >  for (i = 0; i &lt; n; i++) {</span>
-<span class="cstat-no" title="statement not covered" >    nodes[i] = snapshot.getNode(i);</span>
+<span class="fstat-no" title="function not covered">function nodes(snapshot) {</span>
+<span class="cstat-no" title="statement not covered">  var n = snapshot.nodesCount, i, nodes = [];</span>
+<span class="cstat-no" title="statement not covered">  for (i = 0; i &lt; n; i++) {</span>
+<span class="cstat-no" title="statement not covered">    nodes[i] = snapshot.getNode(i);</span>
   }
-<span class="cstat-no" title="statement not covered" >  return nodes;</span>
+<span class="cstat-no" title="statement not covered">  return nodes;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function nodesHist(snapshot) {</span>
-<span class="cstat-no" title="statement not covered" >  var objects = {};</span>
-<span class="cstat-no" title="statement not covered" >  nodes(snapshot).forEach(<span class="fstat-no" title="function not covered" >function(node){</span></span>
-<span class="cstat-no" title="statement not covered" >    var key = node.type === "Object" ? node.name : node.type;</span>
-<span class="cstat-no" title="statement not covered" >    objects[key] = objects[node.name] || 0;</span>
-<span class="cstat-no" title="statement not covered" >    objects[key]++;</span>
+<span class="fstat-no" title="function not covered">function nodesHist(snapshot) {</span>
+<span class="cstat-no" title="statement not covered">  var objects = {};</span>
+<span class="cstat-no" title="statement not covered">  nodes(snapshot).forEach(<span class="fstat-no" title="function not covered">function(node){</span></span>
+<span class="cstat-no" title="statement not covered">    var key = node.type === "Object" ? node.name : node.type;</span>
+<span class="cstat-no" title="statement not covered">    objects[key] = objects[node.name] || 0;</span>
+<span class="cstat-no" title="statement not covered">    objects[key]++;</span>
   });
-<span class="cstat-no" title="statement not covered" >  return objects;</span>
+<span class="cstat-no" title="statement not covered">  return objects;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function CpuProfile() {</span>}
+<span class="fstat-no" title="function not covered">function CpuProfile() {</span>}
 &nbsp;
-CpuProfile.prototype.getHeader = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  return {</span>
+CpuProfile.prototype.getHeader = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  return {</span>
     typeId: this.typeId,
     uid: this.uid,
     title: this.title
   }
 }
 &nbsp;
-CpuProfile.prototype.export = <span class="fstat-no" title="function not covered" >function(dataReceiver) {</span>
-<span class="cstat-no" title="statement not covered" >  dataReceiver = dataReceiver || new ExportStream();</span>
+CpuProfile.prototype.export = <span class="fstat-no" title="function not covered">function(dataReceiver) {</span>
+<span class="cstat-no" title="statement not covered">  dataReceiver = dataReceiver || new ExportStream();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var toStream = dataReceiver instanceof Stream;</span>
-<span class="cstat-no" title="statement not covered" >  var error, result;</span>
+<span class="cstat-no" title="statement not covered">  var toStream = dataReceiver instanceof Stream;</span>
+<span class="cstat-no" title="statement not covered">  var error, result;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    result = JSON.stringify(this);</span>
+<span class="cstat-no" title="statement not covered">  try {</span>
+<span class="cstat-no" title="statement not covered">    result = JSON.stringify(this);</span>
   } catch (err) {
-<span class="cstat-no" title="statement not covered" >    error = err;</span>
+<span class="cstat-no" title="statement not covered">    error = err;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (toStream) {</span>
-<span class="cstat-no" title="statement not covered" >      if (error) {</span>
-<span class="cstat-no" title="statement not covered" >        dataReceiver.emit('error', error);</span>
+<span class="cstat-no" title="statement not covered">  process.nextTick(<span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">    if (toStream) {</span>
+<span class="cstat-no" title="statement not covered">      if (error) {</span>
+<span class="cstat-no" title="statement not covered">        dataReceiver.emit('error', error);</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      dataReceiver.end(result);</span>
+<span class="cstat-no" title="statement not covered">      dataReceiver.end(result);</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      dataReceiver(error, result);</span>
+<span class="cstat-no" title="statement not covered">      dataReceiver(error, result);</span>
     }
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return toStream ? dataReceiver : undefined;</span>
+<span class="cstat-no" title="statement not covered">  return toStream ? dataReceiver : undefined;</span>
 };
 &nbsp;
 var startTime, endTime;
@@ -868,119 +866,119 @@ var activeProfiles = [];
 var profiler = {
   /*HEAP PROFILER API*/
 &nbsp;
-  get snapshots<span class="fstat-no" title="function not covered" >() {</span> <span class="cstat-no" title="statement not covered" >return binding.heap.snapshots; </span>},
+  get snapshots() { return binding.heap.snapshots; },
 &nbsp;
-  takeSnapshot: <span class="fstat-no" title="function not covered" >function(name, control) {</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof name == 'function') {</span>
-<span class="cstat-no" title="statement not covered" >      control = name;</span>
-<span class="cstat-no" title="statement not covered" >      name = '';</span>
+  takeSnapshot: <span class="fstat-no" title="function not covered">function(name, control) {</span>
+<span class="cstat-no" title="statement not covered">    if (typeof name == 'function') {</span>
+<span class="cstat-no" title="statement not covered">      control = name;</span>
+<span class="cstat-no" title="statement not covered">      name = '';</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (typeof control !== 'function') {</span>
-<span class="cstat-no" title="statement not covered" >      control = <span class="fstat-no" title="function not covered" >function noop() {</span>};</span>
+<span class="cstat-no" title="statement not covered">    if (typeof control !== 'function') {</span>
+<span class="cstat-no" title="statement not covered">      control = <span class="fstat-no" title="function not covered">function noop() {</span>};</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    name = '' + name;</span>
+<span class="cstat-no" title="statement not covered">    name = '' + name;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var snapshot = binding.heap.takeSnapshot(name, control);</span>
-<span class="cstat-no" title="statement not covered" >    snapshot.__proto__ = Snapshot.prototype;</span>
-<span class="cstat-no" title="statement not covered" >    snapshot.title = name;</span>
-<span class="cstat-no" title="statement not covered" >    return snapshot;</span>
+<span class="cstat-no" title="statement not covered">    var snapshot = binding.heap.takeSnapshot(name, control);</span>
+<span class="cstat-no" title="statement not covered">    snapshot.__proto__ = Snapshot.prototype;</span>
+<span class="cstat-no" title="statement not covered">    snapshot.title = name;</span>
+<span class="cstat-no" title="statement not covered">    return snapshot;</span>
   },
 &nbsp;
-  deleteAllSnapshots: <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >    Object.keys(binding.heap.snapshots).forEach(<span class="fstat-no" title="function not covered" >function(key) {</span></span>
-<span class="cstat-no" title="statement not covered" >      binding.heap.snapshots[key].delete();</span>
+  deleteAllSnapshots: <span class="fstat-no" title="function not covered">function () {</span>
+<span class="cstat-no" title="statement not covered">    Object.keys(binding.heap.snapshots).forEach(<span class="fstat-no" title="function not covered">function(key) {</span></span>
+<span class="cstat-no" title="statement not covered">      binding.heap.snapshots[key].delete();</span>
     });
   },
 &nbsp;
-  startTrackingHeapObjects: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >    binding.heap.startTrackingHeapObjects();</span>
+  startTrackingHeapObjects: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">    binding.heap.startTrackingHeapObjects();</span>
   },
 &nbsp;
-  stopTrackingHeapObjects: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >    binding.heap.stopTrackingHeapObjects();</span>
+  stopTrackingHeapObjects: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">    binding.heap.stopTrackingHeapObjects();</span>
   },
 &nbsp;
-  getHeapStats: <span class="fstat-no" title="function not covered" >function(iterator, callback) {</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof iterator !== 'function')</span>
-<span class="cstat-no" title="statement not covered" >      iterator = <span class="fstat-no" title="function not covered" >function noop() {</span>};</span>
+  getHeapStats: <span class="fstat-no" title="function not covered">function(iterator, callback) {</span>
+<span class="cstat-no" title="statement not covered">    if (typeof iterator !== 'function')</span>
+<span class="cstat-no" title="statement not covered">      iterator = <span class="fstat-no" title="function not covered">function noop() {</span>};</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (typeof callback !== 'function')</span>
-<span class="cstat-no" title="statement not covered" >      callback = <span class="fstat-no" title="function not covered" >function noop() {</span>};</span>
+<span class="cstat-no" title="statement not covered">    if (typeof callback !== 'function')</span>
+<span class="cstat-no" title="statement not covered">      callback = <span class="fstat-no" title="function not covered">function noop() {</span>};</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return binding.heap.getHeapStats(iterator, callback)</span>
+<span class="cstat-no" title="statement not covered">    return binding.heap.getHeapStats(iterator, callback)</span>
   },
 &nbsp;
-  getObjectByHeapObjectId: <span class="fstat-no" title="function not covered" >function(id) {</span>
-<span class="cstat-no" title="statement not covered" >    id = parseInt(id, 10);</span>
-<span class="cstat-no" title="statement not covered" >    if (isNaN(id)) <span class="cstat-no" title="statement not covered" >return;</span></span>
+  getObjectByHeapObjectId: <span class="fstat-no" title="function not covered">function(id) {</span>
+<span class="cstat-no" title="statement not covered">    id = parseInt(id, 10);</span>
+<span class="cstat-no" title="statement not covered">    if (isNaN(id)) <span class="cstat-no" title="statement not covered">return;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return binding.heap.getObjectByHeapObjectId(id);</span>
+<span class="cstat-no" title="statement not covered">    return binding.heap.getObjectByHeapObjectId(id);</span>
   },
 &nbsp;
-  getHeapObjectId: <span class="fstat-no" title="function not covered" >function(value) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!arguments.length) <span class="cstat-no" title="statement not covered" >return;</span></span>
-<span class="cstat-no" title="statement not covered" >    return binding.heap.getHeapObjectId(value);</span>
+  getHeapObjectId: <span class="fstat-no" title="function not covered">function(value) {</span>
+<span class="cstat-no" title="statement not covered">    if (!arguments.length) <span class="cstat-no" title="statement not covered">return;</span></span>
+<span class="cstat-no" title="statement not covered">    return binding.heap.getHeapObjectId(value);</span>
   },
 &nbsp;
   /*CPU PROFILER API*/
 &nbsp;
-  get profiles<span class="fstat-no" title="function not covered" >() {</span> <span class="cstat-no" title="statement not covered" >return binding.cpu.profiles; </span>},
+  get profiles() { return binding.cpu.profiles; },
 &nbsp;
-  startProfiling: <span class="fstat-no" title="function not covered" >function(name, recsamples) {</span>
-<span class="cstat-no" title="statement not covered" >    if (activeProfiles.length == 0 &amp;&amp; typeof process._startProfilerIdleNotifier == "function")</span>
-<span class="cstat-no" title="statement not covered" >      process._startProfilerIdleNotifier();</span>
+  startProfiling: <span class="fstat-no" title="function not covered">function(name, recsamples) {</span>
+<span class="cstat-no" title="statement not covered">    if (activeProfiles.length == 0 &amp;&amp; typeof process._startProfilerIdleNotifier == "function")</span>
+<span class="cstat-no" title="statement not covered">      process._startProfilerIdleNotifier();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (typeof name == 'boolean') {</span>
-<span class="cstat-no" title="statement not covered" >      recsamples = name;</span>
-<span class="cstat-no" title="statement not covered" >      name = '';</span>
+<span class="cstat-no" title="statement not covered">    if (typeof name == 'boolean') {</span>
+<span class="cstat-no" title="statement not covered">      recsamples = name;</span>
+<span class="cstat-no" title="statement not covered">      name = '';</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    recsamples = recsamples === undefined ? true : Boolean(recsamples);</span>
-<span class="cstat-no" title="statement not covered" >    name = '' + name;</span>
+<span class="cstat-no" title="statement not covered">    recsamples = recsamples === undefined ? true : Boolean(recsamples);</span>
+<span class="cstat-no" title="statement not covered">    name = '' + name;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (activeProfiles.indexOf(name) &lt; 0)</span>
-<span class="cstat-no" title="statement not covered" >      activeProfiles.push(name)</span>
+<span class="cstat-no" title="statement not covered">    if (activeProfiles.indexOf(name) &lt; 0)</span>
+<span class="cstat-no" title="statement not covered">      activeProfiles.push(name)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    startTime = Date.now();</span>
-<span class="cstat-no" title="statement not covered" >    binding.cpu.startProfiling(name, recsamples);</span>
+<span class="cstat-no" title="statement not covered">    startTime = Date.now();</span>
+<span class="cstat-no" title="statement not covered">    binding.cpu.startProfiling(name, recsamples);</span>
   },
 &nbsp;
-  stopProfiling: <span class="fstat-no" title="function not covered" >function(name) {</span>
-<span class="cstat-no" title="statement not covered" >    var index = activeProfiles.indexOf(name);</span>
-<span class="cstat-no" title="statement not covered" >    if (name &amp;&amp; index &lt; 0)</span>
-<span class="cstat-no" title="statement not covered" >      return;</span>
+  stopProfiling: <span class="fstat-no" title="function not covered">function(name) {</span>
+<span class="cstat-no" title="statement not covered">    var index = activeProfiles.indexOf(name);</span>
+<span class="cstat-no" title="statement not covered">    if (name &amp;&amp; index &lt; 0)</span>
+<span class="cstat-no" title="statement not covered">      return;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var profile = binding.cpu.stopProfiling(name);</span>
-<span class="cstat-no" title="statement not covered" >    endTime = Date.now();</span>
-<span class="cstat-no" title="statement not covered" >    profile.__proto__ = CpuProfile.prototype;</span>
-<span class="cstat-no" title="statement not covered" >    if (!profile.startTime) <span class="cstat-no" title="statement not covered" >profile.startTime = startTime;</span></span>
-<span class="cstat-no" title="statement not covered" >    if (!profile.endTime) <span class="cstat-no" title="statement not covered" >profile.endTime = endTime;</span></span>
+<span class="cstat-no" title="statement not covered">    var profile = binding.cpu.stopProfiling(name);</span>
+<span class="cstat-no" title="statement not covered">    endTime = Date.now();</span>
+<span class="cstat-no" title="statement not covered">    profile.__proto__ = CpuProfile.prototype;</span>
+<span class="cstat-no" title="statement not covered">    if (!profile.startTime) <span class="cstat-no" title="statement not covered">profile.startTime = startTime;</span></span>
+<span class="cstat-no" title="statement not covered">    if (!profile.endTime) <span class="cstat-no" title="statement not covered">profile.endTime = endTime;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (name)</span>
-<span class="cstat-no" title="statement not covered" >      activeProfiles.splice(index, 1);</span>
+<span class="cstat-no" title="statement not covered">    if (name)</span>
+<span class="cstat-no" title="statement not covered">      activeProfiles.splice(index, 1);</span>
     else
-<span class="cstat-no" title="statement not covered" >      activeProfiles.length = activeProfiles.length - 1;</span>
+<span class="cstat-no" title="statement not covered">      activeProfiles.length = activeProfiles.length - 1;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (activeProfiles.length == 0 &amp;&amp; typeof process._stopProfilerIdleNotifier == "function")</span>
-<span class="cstat-no" title="statement not covered" >      process._stopProfilerIdleNotifier();</span>
+<span class="cstat-no" title="statement not covered">    if (activeProfiles.length == 0 &amp;&amp; typeof process._stopProfilerIdleNotifier == "function")</span>
+<span class="cstat-no" title="statement not covered">      process._stopProfilerIdleNotifier();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return profile;</span>
+<span class="cstat-no" title="statement not covered">    return profile;</span>
   },
 &nbsp;
-  setSamplingInterval: <span class="fstat-no" title="function not covered" >function(num) {</span>
-<span class="cstat-no" title="statement not covered" >    if (activeProfiles.length) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error('setSamplingInterval must be called when there are no profiles being recorded.');</span>
+  setSamplingInterval: <span class="fstat-no" title="function not covered">function(num) {</span>
+<span class="cstat-no" title="statement not covered">    if (activeProfiles.length) {</span>
+<span class="cstat-no" title="statement not covered">      throw new Error('setSamplingInterval must be called when there are no profiles being recorded.');</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    num = parseInt(num, 10) || 1000;</span>
-<span class="cstat-no" title="statement not covered" >    binding.cpu.setSamplingInterval(num);</span>
+<span class="cstat-no" title="statement not covered">    num = parseInt(num, 10) || 1000;</span>
+<span class="cstat-no" title="statement not covered">    binding.cpu.setSamplingInterval(num);</span>
   },
 &nbsp;
-  deleteAllProfiles: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >    Object.keys(binding.cpu.profiles).forEach(<span class="fstat-no" title="function not covered" >function(key) {</span></span>
-<span class="cstat-no" title="statement not covered" >      binding.cpu.profiles[key].delete();</span>
+  deleteAllProfiles: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">    Object.keys(binding.cpu.profiles).forEach(<span class="fstat-no" title="function not covered">function(key) {</span></span>
+<span class="cstat-no" title="statement not covered">      binding.cpu.profiles[key].delete();</span>
     });
   }
 };
@@ -989,10 +987,11 @@ module.exports = profiler;
 process.profiler = profiler;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 12 2017 00:21:10 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 04:12:31 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
