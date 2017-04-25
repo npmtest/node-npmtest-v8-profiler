@@ -1,6 +1,6 @@
 # npmtest-v8-profiler
 
-#### test coverage for  [v8-profiler (v5.7.0)](http://github.com/node-inspector/v8-profiler)  [![npm package](https://img.shields.io/npm/v/npmtest-v8-profiler.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-v8-profiler) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-v8-profiler.svg)](https://travis-ci.org/npmtest/node-npmtest-v8-profiler)
+#### basic test coverage for  [v8-profiler (v5.7.0)](http://github.com/node-inspector/v8-profiler)  [![npm package](https://img.shields.io/npm/v/npmtest-v8-profiler.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-v8-profiler) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-v8-profiler.svg)](https://travis-ci.org/npmtest/node-npmtest-v8-profiler)
 
 #### node bindings for the v8 profiler
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-v8-profiler/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-v8-profiler/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-v8-profiler/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-v8-profiler/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-v8-profiler/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-v8-profiler/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-v8-profiler/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-v8-profiler/build/coverage.html/index.html)
 
@@ -108,7 +108,8 @@
         "release": "node ./tools/release.js $@",
         "test": "mocha --debug"
     },
-    "version": "5.7.0"
+    "version": "5.7.0",
+    "bin": {}
 }
 ```
 
